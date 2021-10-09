@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap'); 
+
+/* Задание 1 */
+section{
+    display: grid;
+    margin:auto;
+    max-width: 1600px;
+    grid-template-columns: repeat(auto-fit,minmax(84px, 1fr)); 
+}
+.item{
+    padding: 16px;
+    margin-top: 16px;
+    border: 1px solid var(--black);
+    border-radius: 17px;
+    text-align: center;
+} 
+
+/* Анимация текста */
+.item:hover{
+    background-color: var(--lightblue);
+    transform: scale(1.1);
+}
+
+.t{
+    background-color: var(--blue);
+    font-weight: bold;
+}
+
+.table p{
+    display: none;
+}
+
+/* Стили для разрешения меньше 421px */
+@media screen and (max-width: 420px){
+    .ttitle{
+        display: none ;
+    }
+    section{
+        display: inline ;
+    }
+    .table p{
+        display: block;
+    }
+}
+
+/* Задание 2 */
+
+.form-wrapper {
+    margin-top: 50px;
+    width: 100%;
+}
+  
+.search-form {
+    width: auto;
+    margin: 0 50px;
+}
+  
+.search {
+    width: 50%;
+    min-width: 200px;
+    padding: 20px;
+    border: 1px solid var(--black);
+    border-radius: 17px;
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+}
+ 
+button{
+    width: 200px;
+    height: 67px;
+    border: 1px solid var(--black);
+    border-radius: 17px;
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+}
+
+.hide{
+    display:none !important;
+}
+
+/* Изменим цвет выделения на красный */
+mark{
+    background-color: var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+:root{
+    --lightblue: #99FFFF;
+    --blue: #33CCCC;
+    --black: #000000;
+    --red: #FF0000;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Neucha', cursive;
+    color: var(--black);
+    font-size: 20px;
+    background: url('../images/background.jpg') repeat-y;
+    background-size: cover;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin-top: 100px;
+}
