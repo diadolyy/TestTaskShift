@@ -1,9 +1,12 @@
 document.getElementById('button').onclick= function(){
+
     let val=document.querySelector('input').value;
     let items= document.querySelectorAll('#name');
     let err=document.querySelector('.error');
     let counter=0;
     let valReg=new RegExp(val, "ig");
+
+    err.classList.remove('hide');
 
     if(val!=''){
         items.forEach(function(elem){
